@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="/styles/style_crear_usuario.css">
+</head>
+<body>
+    <div class="fondo">
+        <nav>
+            <a href="/paginas/login.html"><img class="miportal" src="/img/Logo_MiPortalU.png" alt=""></a>
+            <ul class="menu">
+                <a class="lista" href="https://unab.edu.co/">Unab<a>
+                <a class="lista" href="https://catalogo.unab.edu.co/">Biblioteca</a>
+                <a class="lista" href="https://canvas.unab.edu.co/">Canvas</a>
+                <a class="lista" href="https://bienestar.unab.edu.co/">Bienestar en Linea</a>
+                <a class="lista" href="https://www.unab.edu.co/graduados/">Graduados</a>
+            </ul>
+        </nav>
+        <div class="login">
+            <h1>Crear Usuario</h1>
+            <p>Ingresa tu cédula o documento de identidad.
+                (Solo números, sin puntos "." ni guiones "-")</p>
+            <div class="usuario">
+                <input class="documento" type="text" placeholder="DOCUMENTO:">
+                <button class="button">Enviar</button>
+            </div>
+            <p class="mensaje"></p>
+
+        </div>
+        
+    </div>
+    <script>
+        let documento=document.querySelector(".documento"),
+        mensaje=document.querySelector(".mensaje"),
+        button=document.querySelector(".button")
+        const mensaje2="Rellena este campo"
+        function login(){
+            if (documento.value===""){
+                documento.placeholder=mensaje2
+            }
+            else{
+                mensaje.innerHTML='Tu usuario es :Unab1234.'
+
+            }
+        }
+        button.addEventListener('click',login)
+        window.addEventListener('keydown',e=>{
+            if(e.keyCode===13){
+                login()
+            }
+        })
+        </script>
+    
+</body>
+</html>

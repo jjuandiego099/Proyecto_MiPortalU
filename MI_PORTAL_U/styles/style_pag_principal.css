@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@400;500&display=swap');
+
+body{
+
+    font-family: "Farro";
+    
+}
+.fondo{
+    width: 1500px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    margin-top: 20px;
+    background:white;
+    justify-content:center ;
+    /* box-shadow: 5px 5px 8px 4px rgb(130 44 173/35%) ; */
+}
+nav{position: relative;
+    width: 1430;
+    margin-left: 30px;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+.menu{
+    position: relative;
+    display:grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content:flex-end;
+    
+}
+li{
+    height: 70px;
+    width: 210px;
+    display: grid;
+    grid-template-rows: auto ;
+    grid-template-columns: 17% 1fr;
+    justify-content: end;
+    margin-right: 5px;
+    margin-right: 5px;
+}
+#user{
+    /* margin-right: 40px; */
+    max-width: 240px;
+    background-color: #822cad;
+    padding: 12px;
+    height: 25px;
+    text-align: center;
+    color: white;
+    border-radius: 13px;
+
+}
+h2{
+    font-size: 18px;
+    font-family: 'Farro';
+    font-weight: 400;
+    text-align:start;
+    margin-top:0;
+    margin-left: 4px;
+}
+.icono_nav{
+    position: relative;
+    width: 35px;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+}
+.miportal{
+
+    margin-top:15px ;
+    margin-right: 28px;
+}
+
+/* .lista:after{
+    text-align: end;
+    content: "";
+    width: 0;
+    height: 3px;
+    background:#822cad;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    margin-right: 0;
+}
+.lista:hover:after{
+    width: 100%;
+    right: 0;
+
+} */
+
+
+.desplegable:hover{
+    background-color: #d1b2e0;
+    border-radius: 10px;
+    
+}
+.desplegable:hover .oculto{
+    visibility: visible;
+    box-shadow: 5px 5px 8px 4px rgb(0 0 0 /35%) ;
+
+}
+.oculto{
+    visibility: hidden;
+}
+
+button{
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background: #ed9926;
+    border: 1px solid;
+    border-radius: 15px;
+    color: white;
+    font-family: "Farro";
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+
+section{
+    display: grid;
+    grid-template-columns: auto 320px auto 1fr;
+    grid-template-rows: auto auto auto;
+    
+ 
+}
+
+h3{
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+}
+h4{
+    font-weight: 400;
+}
+.noticia{
+    box-shadow: 8px 8px 8px 1px rgb( 0 0 0/45%) ;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    margin-right: 40px;
+    
+}

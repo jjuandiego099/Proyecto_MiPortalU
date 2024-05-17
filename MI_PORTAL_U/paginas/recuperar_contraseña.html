@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recuperar Contraseña</title>
+    <link rel="stylesheet" href="/styles/style_recuperar_contraseña.css">
+</head>
+<body>
+    <div class="fondo">
+        <nav>
+            <a href="/paginas/login.html"><img class="miportal" src="/img/Logo_MiPortalU.png" alt=""></a>
+            <ul class="menu">
+                <a class="lista" href="https://unab.edu.co/">Unab<a>
+                <a class="lista" href="https://catalogo.unab.edu.co/">Biblioteca</a>
+                <a class="lista" href="https://canvas.unab.edu.co/">Canvas</a>
+                <a class="lista" href="https://bienestar.unab.edu.co/">Bienestar en Linea</a>
+                <a class="lista" href="https://www.unab.edu.co/graduados/">Graduados</a>
+            </ul>
+        </nav>
+        <div class="login">
+            <h1 >Recuperar Contraseña</h1>
+            <p >Ingrese el correo electrónico de contacto que tiene registrado en nuestro sistema. Se enviará la nueva contraseña a esta cuenta.</p>
+            <input  class="usuario" placeholder="USUARIO:">
+            <input  class="cedula" placeholder="CEDULA:">
+            <input  class="correo" placeholder="CORREO DE CONTACTO:">
+            <button class="button">Enviar</button>
+
+        </div>
+        
+    </div>
+    <script>
+        let usuario=document.querySelector(".usuario"),
+        cedula=document.querySelector(".cedula"),
+        correo=document.querySelector(".correo")
+        const button=document.querySelector(".button")
+        mensaje="Rellena este campo"
+        function login(){
+            if (usuario.value==="" && cedula.value==="" && correo.value===""){
+                usuario.placeholder=mensaje
+                cedula.placeholder=mensaje
+                correo.placeholder=mensaje
+            }
+            else if (usuario.value==="" && cedula.value===""){
+                usuario.placeholder=mensaje
+                cedula.placeholder=mensaje
+            }
+            else if (usuario.value==="" && correo.value===""){
+                correo.placeholder=mensaje
+                usuario.placeholder=mensaje
+            }
+            else if (cedula.value==="" && correo.value===""){
+                cedula.placeholder=mensaje
+                correo.placeholder=mensaje
+            }
+            else if(usuario.value===""){
+                usuario.placeholder=mensaje
+            }
+            else if(cedula.value===""){
+                cedula.placeholder=mensaje
+            }
+            else if(correo.value===""){
+                correo.placeholder=mensaje
+            }
+            else{
+                window.open('/paginas/login.html',"_self")
+            }
+        }
+        button.addEventListener('click',login)
+        window.addEventListener('keydown',e=>{
+            if(e.keyCode===13){
+                login()
+            }
+        })
+
+
+    </script>
+    
+</body>
+</html>

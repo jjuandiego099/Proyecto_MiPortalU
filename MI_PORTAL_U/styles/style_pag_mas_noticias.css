@@ -137,8 +137,10 @@ section{
 }
 
 h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 22px;
     font-weight: 500;
-    margin: 0;
     padding: 0;
 }
 .info{
@@ -149,13 +151,16 @@ h3{
 
 }
 h4{
+    margin-top: 15px;
+    font-size: 20px;
     font-weight: 400;
 }
 .noticia{
     box-shadow: 8px 8px 8px 1px rgb( 0 0 0/45%) ;
     margin-bottom: 30px;
-    margin-left: 20px;
+    margin-left: 0px;
     margin-right: 40px;
+    /* width: 300px; */
     
 }
 
